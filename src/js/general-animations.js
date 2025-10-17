@@ -75,16 +75,19 @@ export function generalAnimations() {
         });
     });
 
-    gsap.from(".timeline-item", {
-        y: 60,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-            trigger: ".timeline-item",
+    gsap.utils.toArray(".timeline-item").forEach((item) => {
+        gsap.from(item, {
+            y: 60,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+            trigger: item,
             start: "top 80%",
             toggleActions: "play none none none"
-        },
+            }
+        });
     });
+
 
 }
