@@ -17,7 +17,7 @@ export function arrowBounce() {
     scaleY: 1,
     duration: 1.2,
     ease: 'bounce.out',
-    delay: 16
+    delay: 1
   });
 
   // Hover animation

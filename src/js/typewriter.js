@@ -17,12 +17,12 @@ export function typeWriterAnimation() {
 
     const letters = heading.querySelectorAll("span");
 
-    gsap.timeline({ delay: 16 })
+    gsap.timeline({ delay: 1 })
         .set(heading, { opacity: 1 })
         .to(letters, {
             opacity: 1,
             duration: 0.1,
             stagger: 0.15,
             ease: "power1.inOut"
-        });
+    });
 }
