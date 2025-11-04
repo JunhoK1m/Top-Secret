@@ -18,3 +18,8 @@
     --font-sans: "Montserrat", sans-serif; /* Creates utility class: font-montserrat */
     --spacing-site: 1400px;
 }
+
+/* body.lock-scroll {
+  overflow: hidden;
+  height: 100dvh;
+} */

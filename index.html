@@ -15,23 +15,41 @@
 <body> 
     <main class="w-full bg-amber-100">
         <div class="overflow-y-hidden h-[100dvh]">
-            <div class="absolute left-1/2 top-1/2 -translate-x-1/2">
-                <h1 class="js-heading-text text-6xl font-heading">WIJUT</h1>   
-                <img id="longDownArrow" src="/src/icons/down-long-arrow.svg" alt="Down Arrow" class="cursor-pointer w-[100px] mx-auto mt-[20px]" />
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-[24px]">
+                <h1 class="js-heading-text text-2xl font-heading mb-4 text-left text-wrap">Enter the 6 digit password</h1> 
+                <input id="password" type="text" maxlength="6" class="js-gsap bg-amber-50 leading-[1] w-full text-[60px] px-4 py-2" data-animation="reveal-up">
+                <img id="longDownArrow" src="/src/icons/down-long-arrow.svg" alt="Down Arrow" class="cursor-pointer w-[100px] mx-auto mt-[20px] opacity-0 pointer-events-none" />
             </div>            
         </div>
-            <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-50">
-                <div class="relative w-[90%] max-w-sm h-[70%] perspective-1000 js-card-stack">
-                    <div class="absolute inset-0 bg-pink-300 rounded-3xl shadow-xl flex items-center justify-center text-3xl font-bold text-white js-card">1</div>
-                    <div class="absolute inset-0 bg-blue-300 rounded-3xl shadow-xl flex items-center justify-center text-3xl font-bold text-white js-card">2</div>
-                    <div class="absolute inset-0 bg-green-300 rounded-3xl shadow-xl flex items-center justify-center text-3xl font-bold text-white js-card">3</div>
-                </div>
 
-                <!-- Nav buttons -->
-                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-4">
-                    <button id="prevCard" class="bg-black/60 text-white px-4 py-2 rounded-lg text-sm">Prev</button>
-                    <button id="nextCard" class="bg-black/60 text-white px-4 py-2 rounded-lg text-sm">Next</button>
+        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-50  px-[24px]" id="first-day">
+            <div class="h-full">
+                <h2 class="text-4xl mt-[24px] js-gsap" data-animation="reveal-up">August 3rd, 2025</h2>
+                <div class="relative flex justify-between top-[28%]">
+                    <img src="./src/images/Sumner.jpg" class="js-gsap w-[48%] -translate-y-20"  data-animation="reveal-left-float">
+                    <img src="./src/images/Sumner-lila.JPG" class="js-gsap w-[48%] translate-y-20"  data-animation="reveal-right-float">
                 </div>
+            </div>
+        </div>
+
+        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-50  px-[24px]" id="first-day">
+            <div class="h-full">
+                <h2 class="text-3xl mt-[40px] js-gsap text-center pb-60" data-animation="reveal-up">여기 기억 하지?</h2>
+                <h2 class="text-3xl mt-[40px] js-gsap" data-animation="reveal-up">내가 이제 제일 좋아 하는데야</h2>
+            </div>
+        </div>
+        
+        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-50" id="image-slider">
+            <div class="relative w-[90%] max-w-sm h-[70%] perspective-1000 js-card-stack">
+                <div class="absolute inset-0 bg-pink-300 rounded-3xl shadow-xl flex items-center justify-center text-3xl font-bold text-white js-card">1</div>
+                <div class="absolute inset-0 bg-blue-300 rounded-3xl shadow-xl flex items-center justify-center text-3xl font-bold text-white js-card">2</div>
+                <div class="absolute inset-0 bg-green-300 rounded-3xl shadow-xl flex items-center justify-center text-3xl font-bold text-white js-card">3</div>
+            </div>
+
+            <!-- Nav buttons -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-4">
+                <button id="prevCard" class="bg-black/60 text-white px-4 py-2 rounded-lg text-sm">Prev</button>
+                <button id="nextCard" class="bg-black/60 text-white px-4 py-2 rounded-lg text-sm">Next</button>
             </div>
         </div>
     </main>
