@@ -12,6 +12,7 @@
     <link href="/src/input.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 
 <body> 
@@ -353,16 +354,16 @@
                 </div>                
             </div>                  
         </section>
-
-        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-50  px-[24px]" id="first-day">
-            <div class="h-full">
-                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" id="100-days" data-animation="reveal-up">
-                    <p>100 days</p>
+        <div class="bg-amber-200 p-8 text-center mx-auto js-gsap text-6xl mt-20" data-animation="reveal-up">
+            <p>And finally...</p>
+        </div>  
+        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-100  px-[24px]">            
+            <div class="h-full flex flex-col justify-center">
+                <div class="bg-amber-200 p-8 text-center mx-auto js-gsap text-6xl" id="100-days" data-animation="reveal-up">
+                    <p>100 DAYS!</p>
                 </div>  
             </div>
-        </div>
-
-        
+        </div>        
     </main>
 
     <script type="module" src="/src/main.js"></script>

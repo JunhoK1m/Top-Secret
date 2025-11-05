@@ -1,6 +1,7 @@
 import { gsap } from 'gsap';
 import { generalAnimations } from './js/general-animations.js';
 import { typeWriterAnimation } from './js/typewriter.js';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 document.addEventListener('DOMContentLoaded', () => {
     const correctPassword = "030825";
@@ -206,19 +207,64 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             );
         }
+
+        // 🎉 Special celebration animation for 100 DAYS
+  if (rootEl.id === "100-days") {
+    ScrollTrigger.create({
+      trigger: rootEl,
+      start: "top 80%",
+      once: true, // only fire once
+      onEnter: () => {
+        // 1️⃣ Shake animation
+        gsap.fromTo(
+          rootEl,
+          { rotation: -2 },
+          {
+            rotation: 2,
+            duration: 0.1,
+            yoyo: true,
+            repeat: 15,
+            ease: "power1.inOut",
+            onComplete: () => gsap.to(rootEl, { rotation: 0, duration: 0.2 })
+          }
+        );
+
+        // 2️⃣ Reveal animation (scale + fade in)
+        gsap.fromTo(
+          rootEl,
+          { scale: 0.5, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 1.2, ease: "elastic.out(1, 0.4)", delay: 0.3 }
+        );
+
+        // 3️⃣ Confetti burst
+        if (window.confetti) {
+          const duration = 2 * 1000;
+          const end = Date.now() + duration;
+
+          (function frame() {
+            confetti({
+              particleCount: 5,
+              angle: 60,
+              spread: 55,
+              origin: { x: 0 },
+            });
+            confetti({
+              particleCount: 5,
+              angle: 120,
+              spread: 55,
+              origin: { x: 1 },
+            });
+
+            if (Date.now() < end) {
+              requestAnimationFrame(frame);
+            }
+          })();
+        }
+      },
+    });
+  }
         
         
-
-
-
-
-
-
-
-
-
-
-
 
 
     });
