@@ -19,6 +19,32 @@
     --spacing-site: 1400px;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: white;
+  border-radius: 999999px;
+}
+
+.swiper-button-next {
+  right: 12px !important;
+
+}
+
+.swiper-navigation-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: oklch(76.9% 0.188 70.08) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: oklch(76.9% 0.188 70.08)!important;
+}
+
+
 /* body.lock-scroll {
   overflow: hidden;
   height: 100dvh;
