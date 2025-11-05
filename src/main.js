@@ -8,6 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const arrowImage = document.getElementById("longDownArrow");
     const passwordInput = document.getElementById("password");
 
+    window.onload = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    };
+
     // Lock scroll initially
     document.body.classList.add("lock-scroll");
 

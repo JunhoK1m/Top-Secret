@@ -25,19 +25,20 @@
             </div>            
         </div>
 
-        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-50  px-[24px]" id="first-day">
+        <div class="relative h-full py-30 flex items-center justify-center overflow-hidden bg-amber-50  px-[24px]" id="first-day">
             <div class="h-full">
                 <div class="relative flex justify-between top-[28%]">
-                    <img src="./src/images/Sumner.jpg" class="js-gsap w-[48%] -translate-y-20"  data-animation="reveal-left-float">
-                    <img src="./src/images/Sumner-lila.JPG" class="js-gsap w-[48%] translate-y-20"  data-animation="reveal-right-float">
+                    <img src="./src/images/Sumner.jpg" class="js-gsap w-[48%] -translate-y-20 max-h-[450px]"  data-animation="reveal-left-float">
+                    <img src="./src/images/Sumner-lila.JPG" class="js-gsap w-[48%] translate-y-20 max-h-[450px]"  data-animation="reveal-right-float">
                 </div>
             </div>
         </div>
 
-        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-50  px-[24px]" id="first-day">
+        <div class="relative h-full flex items-center justify-center overflow-hidden bg-amber-50  px-[24px]" id="first-day">
             <div class="h-full">
-                <h2 class="text-3xl mt-[40px] js-gsap text-center pb-60" data-animation="reveal-up">여기 기억 하지?</h2>
-                <h2 class="text-3xl mt-[40px] js-gsap text-center pb-60" data-animation="reveal-up">This is the start of our forever journey</h2>
+                <h2 class="text-3xl mt-[40px] md:mt-[80px] js-gsap text-center pb-60" data-animation="reveal-up">자기야 우리가 여기 처음로 <br> 같이 간지 벌써 100일이 됐어</h2>
+                <h2 class="text-3xl mt-[40px] md:mt-[80px] js-gsap text-center pb-60" data-animation="reveal-up">시간이 진짜 어디 갔지?</h2>
+                <h2 class="text-3xl mt-[40px] md:mt-[80px] js-gsap text-center pb-60" data-animation="reveal-up">그 시간 어디갔는지 좀 볼까?</h2>
             </div>
         </div>
 
@@ -47,9 +48,9 @@
 
             <div class="flex flex-col gap-10 relative z-10 top-20">
 
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px]">
-                        <img src="src/images/cutey.JPG" class="rounded-tl-2xl rounded-tr-2xl shadow-md w-full max-w-[350px]">
+                <div class="flex flex-col items-center justify-between relative timeline-item">
+                    <div class=" border-4 rounded-[20px] w-[350px]">
+                        <img src="src/images/cutey.JPG" class="rounded-tl-2xl rounded-tr-2xl shadow-md w-full w-[350px]">
                         <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
                             <h3 class="text-2xl font-bold text-gray-800">Ice pack</h3>
                             <p class="text-gray-600 text-sm">12/07/2025</p>
@@ -63,8 +64,8 @@
                 </div>
 
                 <!-- ✅ Swiper-enabled timeline item -->
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px] overflow-hidden w-[350px]">
+                <div class="flex flex-col items-center justify-between relative timeline-item">
+                    <div class="border-4 rounded-[20px] overflow-hidden w-[350px]">
                         
                         <!-- Swiper wrapper -->
                         <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
@@ -97,8 +98,8 @@
                     <p>-6 days</p>
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px]">
+                <div class="flex flex-col items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px]">
                         <img src="src/images/golf.JPG" class="rounded-tl-2xl rounded-tr-2xl shadow-md w-full max-w-[350px]">
                         <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
                             <h3 class="text-2xl font-bold text-gray-800">소원 내기 이긴 날</h3>
@@ -112,8 +113,8 @@
                 </div>
 
                 <!-- ✅ Swiper-enabled timeline item -->
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px] overflow-hidden w-[350px]">
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
                         
                         <!-- Swiper wrapper -->
                         <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
@@ -143,13 +144,13 @@
                     </div>
                 </div>  
 
-                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                <div class="bg-amber-200 py-2 w-[200px] text-2xl font-bold text-center mx-auto js-gsap" data-animation="reveal-up">
                     <p>D-day</p>
                 </div>
                 
                 <!-- ✅ Swiper-enabled timeline item -->
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px] overflow-hidden w-[350px]">
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
                         
                         <!-- Swiper wrapper -->
                         <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
@@ -166,7 +167,7 @@
                         </div>
 
                         <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
-                            <h3 class="text-2xl font-bold text-gray-800">스키장~ <span class="text-[12px]">(집에 안갈래)</span></h3>
+                            <h3 class="text-2xl font-bold text-gray-800">스키장~ <span class="text-[12px]">(집에 안갈래 사건)</span></h3>
                             <p class="text-gray-600 text-sm">16/08/2025</p>
                         </div>
                     </div>
@@ -177,8 +178,8 @@
                 </div>
 
                 <!-- ✅ Swiper-enabled timeline item -->
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px] overflow-hidden w-[350px]">
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
                         
                         <!-- Swiper wrapper -->
                         <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
@@ -205,8 +206,8 @@
                 </div>
 
                 <!-- ✅ Swiper-enabled timeline item -->
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px] overflow-hidden w-[350px]">
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
                         
                         <!-- Swiper wrapper -->
                         <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
@@ -238,8 +239,8 @@
                     
                 
                 <!-- ✅ Swiper-enabled timeline item -->
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px] overflow-hidden w-[350px]">
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
                         
                         <!-- Swiper wrapper -->
                         <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
@@ -267,8 +268,8 @@
                 </div>
 
                 <!-- ✅ Swiper-enabled timeline item -->
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px] overflow-hidden w-[350px]">
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
                         
                         <!-- Swiper wrapper -->
                         <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
@@ -293,8 +294,8 @@
                 </div>
                 
                 <!-- ✅ Swiper-enabled timeline item -->
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px] overflow-hidden w-[350px]">
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
                         
                         <!-- Swiper wrapper -->
                         <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
@@ -326,8 +327,8 @@
                 </div>
 
                 <!-- ✅ Swiper-enabled timeline item -->
-                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item">
-                    <div class="sm:w-1/2 sm:pr-8 border-4 rounded-[20px] overflow-hidden w-[350px]">
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
                         
                         <!-- Swiper wrapper -->
                         <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
