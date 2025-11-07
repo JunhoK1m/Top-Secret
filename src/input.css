@@ -43,8 +43,8 @@
 .swiper-pagination-bullet-active {
   background-color: oklch(76.9% 0.188 70.08)!important;
 }
-/* 
+
 body.lock-scroll {
   overflow: hidden;
   height: 100dvh;
-} */
+}

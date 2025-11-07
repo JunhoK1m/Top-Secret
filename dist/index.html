@@ -3,12 +3,418 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Site</title>
-  <script type="module" crossorigin src="/assets/index-DiB9KV8k.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-B0ICfFy6.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Lila</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script type="module" crossorigin src="./assets/index-Ce4hniD3.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C__XZNzz.css">
 </head>
-<body>
-    <h1 class="text-3xl font-bold text-brand p-4 font-heading">Hello, Tailwind v4!</h1>
+
+<body> 
+    <main class="w-full bg-amber-100">
+        <div class="overflow-y-hidden h-[100dvh]">
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-[24px]">
+                <h1 class="js-heading-text text-2xl font-heading mb-4 text-left text-wrap">Enter the 6 digit password</h1> 
+                <input id="password" type="text" maxlength="6" class="js-gsap bg-amber-50 leading-[1] w-full text-[60px] px-4 py-2" data-animation="reveal-up">
+                <img id="longDownArrow" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20id='down-arrow'%20xmlns='http://www.w3.org/2000/svg'%20class='icon%20line'%3e%3cpath%20id='primary'%20d='M12,3V21M9,18l3,3,3-3'%20style='fill:%20none;%20stroke:%20rgb(0,%200,%200);%20stroke-linecap:%20round;%20stroke-linejoin:%20round;%20stroke-width:%201.5;'%3e%3c/path%3e%3c/svg%3e" alt="Down Arrow" class="cursor-pointer w-[100px] mx-auto mt-[20px] opacity-0 pointer-events-none" />
+            </div>            
+        </div>
+
+        <div class="relative h-full py-30 flex items-center justify-center overflow-hidden bg-amber-50  px-[24px]" id="first-day">
+            <div class="h-full">
+                <div class="relative flex justify-between top-[28%]">
+                    <img src="./assets/Sumner-DyJ_duo6.jpg" class="js-gsap w-[48%] -translate-y-20 max-h-[450px]"  data-animation="reveal-left-float">
+                    <img src="./assets/Sumner-lila-NIuiq1Ir.JPG" class="js-gsap w-[48%] translate-y-20 max-h-[450px]"  data-animation="reveal-right-float">
+                </div>
+            </div>
+        </div>
+
+        <div class="relative h-full flex items-center justify-center overflow-hidden bg-amber-50  px-[24px]" id="first-day">
+            <div class="h-full">
+                <h2 class="text-3xl mt-[40px] md:mt-[80px] js-gsap text-center pb-60" data-animation="reveal-up">자기야 우리가 여기 처음로 <br> 같이 간지 벌써 100일이 됐어</h2>
+                <h2 class="text-3xl mt-[40px] md:mt-[80px] js-gsap text-center pb-60" data-animation="reveal-up">시간이 진짜 어디 갔지?</h2>
+                <h2 class="text-3xl mt-[40px] md:mt-[80px] js-gsap text-center pb-60" data-animation="reveal-up">그 시간 어디 갔는지 보러 ㄱㄱ</h2>
+            </div>
+        </div>
+
+        <section class="relative max-w-site mx-auto py-[140px]">
+            <!-- Vertical Line -->
+            <div class="absolute left-1/2 top-50 h-full w-1 bg-amber-400 transform -translate-x-1/2 z-0"></div>
+
+            <div class="flex flex-col gap-10 relative z-10 top-20">
+
+                <div class="flex flex-col items-center justify-between relative timeline-item">
+                    <div class=" border-4 rounded-[20px] w-[350px]">
+                        <img src="./assets/cutey-B8XGx8el.JPG" class="rounded-tl-2xl rounded-tr-2xl shadow-md w-full w-[350px]">
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">Ice pack</h3>
+                            <p class="text-gray-600 text-sm">12/07/2025</p>
+                        </div>
+                    </div>
+                    <div class="w-5 h-5 bg-amber-500 border-4 border-white rounded-full absolute left-1/2 -top-5 transform -translate-x-1/2 z-20"></div>
+                </div>   
+
+                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>-23 days</p>
+                </div>
+
+                <!-- ✅ Swiper-enabled timeline item -->
+                <div class="flex flex-col items-center justify-between relative timeline-item">
+                    <div class="border-4 rounded-[20px] overflow-hidden w-[350px]">
+                        
+                        <!-- Swiper wrapper -->
+                        <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                <img src="./assets/leo-owner-C6Wx-zK3.JPG" class="w-full h-full object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                <img src="./assets/IMG_4303-BsULFUW2.JPG" class="w-full h-full object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                <img src="./assets/IMG_4299-D4XbnLXm.JPG" class="w-full h-full object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                <img src="./assets/puzzle-flirtng-DopJQxjI.JPG" class="w-full h-full object-cover" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>                    
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">리오 주인(?) 보러 온날</h3>
+                            <p class="text-gray-600 text-sm">29/07/2025</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>-6 days</p>
+                </div>
+
+                <div class="flex flex-col items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px]">
+                        <img src="./assets/golf-CzvTkBr4.JPG" class="rounded-tl-2xl rounded-tr-2xl shadow-md w-full max-w-[350px]">
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">소원 내기 이긴 날</h3>
+                            <p class="text-gray-600 text-sm">01/08/2025</p>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>-3 days</p>
+                </div>
+
+                <!-- ✅ Swiper-enabled timeline item -->
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
+                        
+                        <!-- Swiper wrapper -->
+                        <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                <img src="./assets/Sumner-lila-NIuiq1Ir.JPG" class="w-full h-full object-cover block" />
+                                </div>
+                                <div class="swiper-slide">
+                                <img src="./assets/Sumner-DyJ_duo6.jpg" class="w-full h-full object-cover block" />
+                                </div>
+                                <div class="swiper-slide">
+                                <img src="./assets/ad%20break-CJJk2v_D.JPG" class="w-full h-full object-cover block" />
+                                </div>
+                                <div class="swiper-slide">
+                                <img src="./assets/IMG_1043-DkrIVoQ-.JPG" class="w-full h-full object-cover block" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">광고 타임? <span class="text-[12px]">(Best day of my life)</span></h3>
+                            <p class="text-gray-600 text-sm">03/08/2025</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="bg-amber-200 py-2 w-[200px] text-2xl font-bold text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>D-day</p>
+                </div>
+                
+                <!-- ✅ Swiper-enabled timeline item -->
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
+                        
+                        <!-- Swiper wrapper -->
+                        <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/IMG_0098-_Mf4jf--.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0096-RTPhe3VT.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_4728-D9wgL2B8.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1251-CnrPh3Bp.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1268-BSoM8Rvu.JPG" class="w-full h-full object-cover" /></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">스키장~ <span class="text-[12px]">(집에 안갈래 사건)</span></h3>
+                            <p class="text-gray-600 text-sm">16/08/2025</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>14 days</p>
+                </div>
+
+                <!-- ✅ Swiper-enabled timeline item -->
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
+                        
+                        <!-- Swiper wrapper -->
+                        <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/IMG_0032-DjH7tONI.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0014-X2DSKx11.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0026-C8iSvCbW.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0089-BajfMdlB.JPG" class="w-full h-full object-cover" /></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">Our first date</h3>
+                            <p class="text-gray-600 text-sm">26/08/2025</p>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>24 days</p>
+                </div>
+
+                <!-- ✅ Swiper-enabled timeline item -->
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
+                        
+                        <!-- Swiper wrapper -->
+                        <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/IMG_0136-DbeUFQJC.jpg" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0110-Dv02qu_G.jpg" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0119-Bm-cvbwb.jpg" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0108-C1fy43-g.jpg" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0151-DeEmZq6A.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1394-wXo4khfx.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1410-B6AxhB_N.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1428-BaSDatQC.JPG" class="w-full h-full object-cover" /></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">곤돌라 <span class="text-[12px]">(Highlight of the day: caterpillar)</span></h3>
+                            <p class="text-gray-600 text-sm">30/08/2025</p>
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>28 days</p>
+                </div>
+                    
+                
+                <!-- ✅ Swiper-enabled timeline item -->
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
+                        
+                        <!-- Swiper wrapper -->
+                        <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/IMG_0471-uoeFOuGI.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0476-B8IdW3Ki.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0503-CkCUBzs_.jpg" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0511-BYxnC99H.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0515-TB7yKbYu.JPG" class="w-full h-full object-cover" /></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">벚꽃! <span class="text-[12px]">(You're the cherry blossom)</span></h3>
+                            <p class="text-gray-600 text-sm">16/09/2025</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>45 days</p>
+                </div>
+
+                <!-- ✅ Swiper-enabled timeline item -->
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
+                        
+                        <!-- Swiper wrapper -->
+                        <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/IMG_0805-WlcozHyy.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0788-NEI1UGsa.JPG" class="w-full h-full object-cover" /></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">?</h3>
+                            <p class="text-gray-600 text-sm">30/09/2025</p>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>59 days</p>
+                </div>
+                
+                <!-- ✅ Swiper-enabled timeline item -->
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
+                        
+                        <!-- Swiper wrapper -->
+                        <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/IMG_0919-CABZv-S5.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0953-B17e8jDb.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0985-Dq6aycXh.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1896-BzzcCgZ9.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1925-CtQf6P93.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1972-BT8-XYjt.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1951-iNybCIns.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1986-DJK8vqn-.JPG" class="w-full h-full object-cover" /></div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">Akaroa</h3>
+                            <p class="text-gray-600 text-sm">11/10/2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-amber-200 py-2 w-[200px] text-center mx-auto js-gsap" data-animation="reveal-up">
+                    <p>70 days</p>
+                </div>
+
+                <!-- ✅ Swiper-enabled timeline item -->
+                <div class="flex flex-col  items-center justify-between relative timeline-item">
+                    <div class=" sm: border-4 rounded-[20px] overflow-hidden w-[350px]">
+                        
+                        <!-- Swiper wrapper -->
+                        <div class="swiper timeline-swiper bg-amber-100 w-[350px] h-[450px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/IMG_1199-CGEN4sMs.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1220-D78c9sEK.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_1967-H4FOgwcd.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0883-DsHpJlzo.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0866-Ds78YAbV.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0851-C3kBYQcK.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0555--FOXA_o7.JPG" class="w-full h-full object-cover" /></div>
+                                <div class="swiper-slide"><img src="./assets/IMG_0559-Dgn55dHG.JPG" class="w-full h-full object-cover" /></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                        <div class="bg-amber-50 rounded-bl-2xl rounded-br-2xl p-4">                        
+                            <h3 class="text-2xl font-bold text-gray-800">그냥 내가 좋하는 사진들 몇개</h3>
+                            <p class="text-gray-600 text-sm">Too many photos my website can't handle</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>                  
+        </section>
+        <div class="bg-amber-200 p-8 text-center mx-auto js-gsap text-6xl mt-20" data-animation="reveal-up">
+            <p>And finally...</p>
+        </div>  
+        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-100  px-[24px]">            
+            <div class="h-full flex flex-col justify-center">
+                <div class="bg-amber-200 p-8 text-center mx-auto js-gsap text-6xl" id="100-days" data-animation="reveal-up">
+                    <p>100 DAYS!</p>
+                </div>  
+            </div>
+        </div>       
+        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-100  px-[24px]">            
+            <div class="h-full flex flex-col justify-center">
+                <div class="bg-amber-200 p-8 text-center mx-auto js-gsap text-2xl" data-animation="reveal-up">
+                    <p>Plus many many many (forever) more to go... </p>
+                </div>  
+            </div>
+        </div>  
+        <div class="relative py-8 flex items-center justify-center overflow-hidden bg-amber-100  px-[24px]">            
+            <div class="h-full flex flex-col justify-center">
+                <div class="bg-amber-200 p-8 text-center mx-auto js-gsap text-2xl" data-animation="reveal-up">
+                    <p>내 소원 들어줘서 정말 고마워</p>
+                </div>  
+            </div>
+        </div>  
+        <div class="relative py-8 flex items-center justify-center overflow-hidden bg-amber-100  px-[24px]">            
+            <div class="h-full flex flex-col justify-center">
+                <div class="bg-amber-200 p-8 text-center mx-auto js-gsap text-2xl" data-animation="reveal-up">
+                    <p>영원히 사랑해 자기야</p>
+                </div>  
+            </div>
+        </div>  
+        <div class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-amber-100  px-[24px]">            
+            <div class="h-full flex flex-col justify-center">
+                <div class="p-8 text-center mx-auto js-gsap text-2xl" data-animation="reveal-up">
+                    <img src="./assets/heart-CYEo3k5e.png">
+                </div>  
+            </div>
+        </div> 
+    </main>
 
 </body>
+
 </html>
+
+
+<script>
+    document.querySelectorAll('.timeline-swiper').forEach((el, index) => {
+        new Swiper(el, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+            el: el.querySelector('.swiper-pagination'),
+            clickable: true,
+            },
+            navigation: {
+            nextEl: el.querySelector('.swiper-button-next'),
+            prevEl: el.querySelector('.swiper-button-prev'),
+            },
+        });
+    });
+</script>
